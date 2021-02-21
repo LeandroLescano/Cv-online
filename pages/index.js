@@ -1,11 +1,23 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import About from "../components/about.js";
+import Education from "../components/education.js";
+import Experience from "../components/experience.js";
 import Header from "../components/header.js";
+import Portfolio from "../components/portfolio.js";
 import Skills from "../components/skills.js";
 import StartPage from "../components/start-page.js";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 1750);
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -31,7 +43,15 @@ export default function Home() {
       <main className={styles.main}>
         {/* <StartPage styles={styles} /> */}
         <Header />
-        <Skills />
+        {loaded && (
+          <div className="fadeIn">
+            <Skills />
+            <Education />
+            <Experience />
+            <Portfolio />
+            <About />
+          </div>
+        )}
       </main>
     </div>
   );

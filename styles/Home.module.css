@@ -13,6 +13,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  overflow-x: hidden;
+  width: 90vw;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main {
+    width: 80vw;
+  }
 }
 
 .footer {
