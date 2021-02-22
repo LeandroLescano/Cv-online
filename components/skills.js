@@ -4,34 +4,36 @@ function Skills() {
   const [skills, setSkills] = useState([
     {
       name: "C#",
-      logo: "https://img.icons8.com/ios-filled/100/000000/c-sharp-logo.png",
+      logo: "https://iconape.com/wp-content/files/sh/51404/svg/c--4.svg",
       backColor: "#7b1fa2",
     },
     {
       name: "Java",
-      logo:
-        "https://img.icons8.com/ios-filled/100/000000/java-coffee-cup-logo--v1.png",
+      logo: "http://assets.stickpng.com/thumbs/58480979cef1014c0b5e4901.png",
       backColor: "#c62828",
     },
     {
       name: "SQL",
       logo:
-        "https://img.icons8.com/ios-filled/100/000000/data-configuration.png",
+        "https://www.pngkit.com/png/full/269-2693118_kloudio-mysql-my-sql-logo-png.png",
       backColor: "#0d47a1",
     },
     {
       name: "HTML",
-      logo: "https://img.icons8.com/ios-filled/100/000000/html-5.png",
+      logo:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/600px-HTML5_Badge.svg.png",
       backColor: "#ef6c00",
     },
     {
       name: "CSS",
-      logo: "https://img.icons8.com/ios-filled/100/000000/css3.png",
+      logo:
+        "https://www.mybusiness360.gr/static/1972f2fa887caf3b35255d5419471333/bc59e/css3-tool.png",
       backColor: "#0277bd",
     },
     {
       name: "Javascript",
-      logo: "https://img.icons8.com/ios-filled/100/000000/javascript.png",
+      logo:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png",
       backColor: "#ffff00",
     },
     {
@@ -48,7 +50,8 @@ function Skills() {
     },
     {
       name: "Android",
-      logo: "https://img.icons8.com/ios-filled/100/000000/android-os.png",
+      logo:
+        "https://upload.wikimedia.org/wikipedia/commons/6/66/Android_robot.png",
       backColor: "#7cb342",
     },
   ]);
@@ -69,9 +72,8 @@ function Skills() {
         <div className="row">
           {skills.map((tec, i) => {
             return (
-              <div className="col-6 col-lg-4 mb-3">
+              <div key={i} className="col-6 col-lg-4 mb-3">
                 <div
-                  key={i}
                   className="card"
                   onMouseEnter={() => handleHover(tec.name)}
                   onMouseLeave={() => handleHover(tec.name)}
