@@ -67,12 +67,14 @@ function Skills() {
 
   return (
     <div className="content-box">
-      <h2>Tecnologías</h2>
+      <h2 data-aos="fade-right" className="mb-2">
+        Tecnologías
+      </h2>
       <div className="skills-section">
-        <div className="row">
+        <div className="row m-0">
           {skills.map((tec, i) => {
             return (
-              <div key={i} className="col-6 col-lg-4 mb-3">
+              <div key={i} data-aos="zoom-in" className="col-6 col-lg-4 mb-3">
                 <div
                   className="card"
                   onMouseEnter={() => handleHover(tec.name)}

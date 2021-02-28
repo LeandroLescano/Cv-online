@@ -24,20 +24,26 @@ function Education() {
 
   return (
     <div className="content-box">
-      <h2>Estudios</h2>
-      <div className="row">
+      <h2 data-aos="fade-right">Estudios</h2>
+      <div className="row m-0">
         <div className="col">
-          <ul className="timeline">
-            {education.reverse().map((item, i) => {
-              return (
-                <li key={i}>
-                  <p className="fs-3 mb-1">{item.title} </p>
-                  <p className="fs-4 m-0">{item.institute}</p>
-                  <p className="fs-5 m-0">{item.since + "-" + item.until}</p>
-                </li>
-              );
-            })}
-          </ul>
+          {education.reverse().map((item, i) => {
+            return (
+              <div
+                data-aos={i & 1 ? "fade-left" : "fade-right"}
+                className="card text-dark bg-light shadow-sm mb-3"
+                key={i}
+              >
+                <div className="text-white bg-dark card-header fs-6">
+                  {item.since + " - " + item.until}
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title">{item.title}</h5>
+                  <p className="card-text">{item.institute}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

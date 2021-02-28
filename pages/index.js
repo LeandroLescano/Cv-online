@@ -8,11 +8,13 @@ import Portfolio from "../components/portfolio.js";
 import Skills from "../components/skills.js";
 import StartPage from "../components/start-page.js";
 import styles from "../styles/Home.module.css";
+import AOS from "aos";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
+    AOS.init();
     setTimeout(() => {
       setLoaded(true);
     }, 1750);
@@ -39,12 +41,17 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
           rel="stylesheet"
         />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+          rel="stylesheet"
+        ></link>
       </Head>
       <main className={styles.main}>
         {/* <StartPage styles={styles} /> */}
         <Header />
         {loaded && (
-          <div className="fadeIn">
+          <div>
             <Skills />
             <Education />
             <Experience />
