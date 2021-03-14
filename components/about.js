@@ -20,29 +20,41 @@ function About() {
   }, []);
 
   return (
-    <div className="content-box">
-      <h2>Datos personales</h2>
-      <p>Edad: {age}</p>
-      <p>Email: {info.email}</p>
-      <p>{info.city}</p>
-      <a href={info.linkedin} target="_blank" rel="noopener noreferrer">
-        <button className="btn btn-light border">
-          <img
-            src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg"
-            alt="LinkedInLogo"
-            height="30"
-          />
-        </button>
-      </a>
-      <button className="btn btn-light border ms-2">
-        <a href={info.github} target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
-            alt="GitHubLogo"
-            height="30"
-          />
-        </a>
-      </button>
+    <div className="content-box mb-2">
+      <h2 data-aos="fade-right">Datos personales</h2>
+      <div className="row m-0">
+        <div className="col" data-aos="fade-right">
+          <p className="fs-4">
+            Edad: <br />
+            {age}
+          </p>
+          <p className="fs-4">
+            Email: <br />
+            {info.email}
+          </p>
+          <p className="fs-5">{info.city}</p>
+        </div>
+        <div className="col" data-aos="fade-left">
+          <a href={info.linkedin} target="_blank" rel="noopener noreferrer">
+            <button className="btn btn-light border">
+              <img
+                src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg"
+                alt="LinkedInLogo"
+                height="25"
+              />
+            </button>
+          </a>
+          <a href={info.github} target="_blank" rel="noopener noreferrer">
+            <button className="btn btn-light border ms-2">
+              <img
+                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
+                alt="GitHubLogo"
+                height="25"
+              />
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

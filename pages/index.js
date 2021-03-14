@@ -52,11 +52,11 @@ export default function Home() {
         <Header />
         {loaded && (
           <div>
+            <About />
             <Skills />
             <Education />
             <Experience />
             <Portfolio />
-            <About />
           </div>
         )}
       </main>

@@ -20,6 +20,12 @@ function Education() {
       since: "2020",
       until: "2020",
     },
+    {
+      title: "Licenciatura en Tecnología Educativa",
+      institute: "Universidad Tecnológica Nacional",
+      since: "2021",
+      until: "Actualidad",
+    },
   ];
 
   return (

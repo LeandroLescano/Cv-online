@@ -5,10 +5,19 @@ function Experience() {
   const [exp, setExp] = useState([
     {
       place: "Municipalidad de Tigre",
+      area: "Innovación",
+      position: "Programador",
+      since: "08/03/2021",
+      until: "Actualidad",
+      duration: "",
+      img: "/logoTigre.png",
+    },
+    {
+      place: "Municipalidad de Tigre",
       area: "Recursos Humanos",
       position: "Administrativo",
       since: "22/10/2018",
-      until: "14/03/2021",
+      until: "08/03/2021",
       duration: "",
       img: "/logoTigre.png",
     },
@@ -43,8 +52,19 @@ function Experience() {
     temp.map((item) => {
       let monthS = item.since.substring(3, 5);
       let yearS = item.since.substring(6, 10);
-      let monthE = item.until.substring(3, 5);
-      let yearE = item.until.substring(6, 10);
+      let monthE, yearE;
+      if (item.until === "Actualidad") {
+        let act = new Date();
+        monthE = act.getMonth() + 1;
+        yearE = act.getYear();
+        if (yearE > 100) {
+          yearE += 1900;
+        }
+        console.log({ yearE }, { monthE });
+      } else {
+        monthE = item.until.substring(3, 5);
+        yearE = item.until.substring(6, 10);
+      }
       let monthDiff;
       let yearDiff = yearE - yearS;
       if (yearDiff > 0 && monthS > monthE) {
@@ -52,6 +72,8 @@ function Experience() {
       }
       if (monthS < monthE) {
         monthDiff = monthE - monthS;
+      } else if (monthS == monthE) {
+        monthDiff = 0;
       } else {
         monthDiff = monthE - monthS + 12;
       }
@@ -71,6 +93,8 @@ function Experience() {
         item.duration += monthDiff + " mes)";
       } else if (monthDiff > 0) {
         item.duration += monthDiff + " meses)";
+      } else if (monthDiff == 0) {
+        item.duration += "1 mes)";
       } else {
         item.duration += ")";
       }
@@ -95,26 +119,21 @@ function Experience() {
               >
                 <div className="row g-0">
                   <div
-                    className="d-none d-md-block col-md-2 bg-dark d-flex align-items-center"
+                    className="d-none d-md-flex col-md-2 bg-dark align-items-center img-experience"
                     data-aos="fade-right"
                   >
                     {item.img != null ? (
                       <Image
                         src={item.img}
-                        height="80"
-                        width="80"
+                        height={50}
+                        width={50}
                         layout="responsive"
                         loading="lazy"
                         alt="LogoCompany"
                         className="p-4"
                       />
                     ) : (
-                      <p
-                        className="text-white fw-bold"
-                        style={{ fontSize: "2.5em" }}
-                      >
-                        {item.place}
-                      </p>
+                      <p className="text-white fw-bold m-auto">{item.place}</p>
                     )}
                   </div>
                   <div
