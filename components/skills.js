@@ -4,54 +4,47 @@ function Skills() {
   const [skills, setSkills] = useState([
     {
       name: "C#",
-      logo: "https://iconape.com/wp-content/files/sh/51404/svg/c--4.svg",
+      logo: "/logo-csharp.svg",
       backColor: "#7b1fa2",
     },
     {
       name: "Java",
-      logo: "http://assets.stickpng.com/thumbs/58480979cef1014c0b5e4901.png",
+      logo: "/logo-java.png",
       backColor: "#c62828",
     },
     {
       name: "SQL",
-      logo:
-        "https://www.pngkit.com/png/full/269-2693118_kloudio-mysql-my-sql-logo-png.png",
+      logo: "logo-sql.png",
       backColor: "#0d47a1",
     },
     {
       name: "HTML",
-      logo:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/600px-HTML5_Badge.svg.png",
+      logo: "/logo-html.png",
       backColor: "#ef6c00",
     },
     {
       name: "CSS",
-      logo:
-        "https://www.mybusiness360.gr/static/1972f2fa887caf3b35255d5419471333/bc59e/css3-tool.png",
+      logo: "/logo-css.png",
       backColor: "#0277bd",
     },
     {
       name: "Javascript",
-      logo:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png",
+      logo: "/logo-js.png",
       backColor: "#ffff00",
     },
     {
       name: "ReactJS",
-      logo:
-        "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
+      logo: "logo-react.png",
       backColor: "#03a9f4",
     },
     {
       name: "Firebase",
-      logo:
-        "https://firebase.google.com/downloads/brand-guidelines/PNG/logo-logomark.png",
+      logo: "/logo-firebase.png",
       backColor: "#fb8c00",
     },
     {
       name: "Android",
-      logo:
-        "https://upload.wikimedia.org/wikipedia/commons/6/66/Android_robot.png",
+      logo: "logo-android.png",
       backColor: "#7cb342",
     },
   ]);
@@ -67,14 +60,19 @@ function Skills() {
 
   return (
     <div className="content-box">
-      <h2 data-aos="fade-right" className="mb-2">
+      <h2 data-aos="fade-right" data-aos-offset="10" className="mb-2">
         Tecnologías
       </h2>
       <div className="skills-section">
         <div className="row m-0">
           {skills.map((tec, i) => {
             return (
-              <div key={i} data-aos="zoom-in" className="col-6 col-lg-4 mb-3">
+              <div
+                key={i}
+                data-aos="zoom-in"
+                data-aos-offset="10"
+                className="col-6 col-lg-4 mb-3"
+              >
                 <div
                   className="card"
                   onMouseEnter={() => handleHover(tec.name)}

@@ -33,7 +33,7 @@ function Header() {
           <h4>Fullstack Developer</h4>
         </div>
         <div className="col-8 col-lg-4 d-none d-lg-block order-lg-3 fadeInRight">
-          <h2 className="short-desc">Fullstack Developer</h2>
+          <h2 className="short-desc mb-0">Fullstack Developer</h2>
         </div>
       </div>
       <hr id="headerSeparator" />

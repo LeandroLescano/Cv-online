@@ -24,17 +24,12 @@ function About() {
       <h2 data-aos="fade-right">Datos personales</h2>
       <div className="row m-0">
         <div className="col" data-aos="fade-right">
-          <p className="fs-4">
-            Edad: <br />
-            {age}
-          </p>
-          <p className="fs-4">
-            Email: <br />
-            {info.email}
-          </p>
-          <p className="fs-5">{info.city}</p>
+          <div className="fs-4">Edad: {age} (19/03/2000)</div>
+
+          <div className="fs-4">Ciudad: {info.city}</div>
         </div>
         <div className="col" data-aos="fade-left">
+          <div className="fs-4">Email: {info.email}</div>
           <a href={info.linkedin} target="_blank" rel="noopener noreferrer">
             <button className="btn btn-light border">
               <img

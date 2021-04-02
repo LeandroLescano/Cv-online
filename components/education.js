@@ -30,13 +30,16 @@ function Education() {
 
   return (
     <div className="content-box">
-      <h2 data-aos="fade-right">Estudios</h2>
+      <h2 data-aos="fade-right" data-aos-offset="50">
+        Estudios
+      </h2>
       <div className="row m-0">
         <div className="col">
           {education.reverse().map((item, i) => {
             return (
               <div
                 data-aos={i & 1 ? "fade-left" : "fade-right"}
+                data-aos-offset="50"
                 className="card text-dark bg-light shadow-sm mb-3"
                 key={i}
               >
