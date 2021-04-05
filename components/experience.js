@@ -60,7 +60,6 @@ function Experience() {
         if (yearE > 100) {
           yearE += 1900;
         }
-        console.log({ yearE }, { monthE });
       } else {
         monthE = item.until.substring(3, 5);
         yearE = item.until.substring(6, 10);

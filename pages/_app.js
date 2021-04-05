@@ -5,6 +5,7 @@ import "../styles/skills.css";
 import "../styles/education.css";
 import "../styles/experience.css";
 import "../styles/404.scss";
+import "../styles/portfolio.scss";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
