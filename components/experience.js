@@ -33,16 +33,16 @@ function Experience() {
   ]);
 
   const [isMobile, setIsMobile] = useState(false);
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 768) {
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-    }
-  });
-
+  
   useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        setIsMobile(false);
+      } else {
+        setIsMobile(true);
+      }
+    });
+  
     if (window.innerWidth > 768) {
       setIsMobile(false);
     } else {

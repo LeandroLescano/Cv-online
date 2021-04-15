@@ -14,9 +14,8 @@ export default function Home() {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    AOS.init();
     setTimeout(() => {
-      setLoaded(true);
+      AOS.init();
     }, 1750);
   }, []);
 
@@ -50,7 +49,6 @@ export default function Home() {
       <main className={styles.main}>
         {/* <StartPage styles={styles} /> */}
         <Header />
-        {loaded && (
           <div>
             <About />
             <Skills />
@@ -58,7 +56,6 @@ export default function Home() {
             <Experience />
             <Portfolio />
           </div>
-        )}
       </main>
     </div>
   );
