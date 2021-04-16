@@ -25,6 +25,12 @@ export default function Home() {
         <title>CV | Lescano Leandro</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <meta name="author" content="Lescano Leandro" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Curriculum Vitae de Lescano Leandro Nicolas"
+        />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -49,13 +55,13 @@ export default function Home() {
       <main className={styles.main}>
         {/* <StartPage styles={styles} /> */}
         <Header />
-          <div>
-            <About />
-            <Skills />
-            <Education />
-            <Experience />
-            <Portfolio />
-          </div>
+        <div>
+          <About />
+          <Skills />
+          <Education />
+          <Experience />
+          <Portfolio />
+        </div>
       </main>
     </div>
   );
