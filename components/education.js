@@ -47,7 +47,7 @@ function Education() {
                   {item.since + " - " + item.until}
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title">{item.title}</h5>
+                  <h5 className="card-title"><b>{item.title}</b></h5>
                   <p className="card-text">{item.institute}</p>
                 </div>
               </div>

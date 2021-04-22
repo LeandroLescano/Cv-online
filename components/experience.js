@@ -104,7 +104,7 @@ function Experience() {
 
   return (
     <div className="content-box">
-      <h2>Experiencia</h2>
+      <h2 data-aos="fade-right" data-aos-offset="10">Experiencia</h2>
       <div className="row m-0">
         <div className="col">
           {exp.map((item, i) => {
@@ -143,9 +143,9 @@ function Experience() {
                       {`${item.since} - ${item.until}`}
                     </div>
                     <div className="card-body">
-                      <h5 className="card-title">{item.place}</h5>
+                      <h5 className="card-title"><b>{item.position} - {item.area}</b></h5>
                       <p className="card-text">
-                        {item.position} - {item.area}
+                        {item.place}
                         <br />
                         {item.duration}
                       </p>

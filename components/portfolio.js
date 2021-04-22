@@ -44,18 +44,17 @@ function Portfolio() {
               className="col-lg-6 img-project"
               data-aos={i & 1 ? "flip-right" : "flip-left"}
             >
-              <div className="card-portfolio">
+              <div className="card-portfolio h-100">
                 <img
                   src={item.img}
                   alt="imgPort"
                   loading="lazy"
-                  className="shadow-sm img-fluid rounded"
+                  className="shadow-sm img-fluid rounded h-100"
                 />
                 <div className="info">
                   <h2>{item.name}</h2>
                   <p>
                     {item.desc}
-
                     <a
                       href={item.link}
                       target="_blank"

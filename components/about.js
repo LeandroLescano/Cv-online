@@ -24,7 +24,7 @@ function About() {
       <h2 data-aos="fade-right">Datos personales</h2>
       <div className="row m-0">
         <div className="col" data-aos="fade-right">
-          <div className="fs-4">Edad: {age} (19/03/2000)</div>
+          <div className="fs-4">Edad: {age} años (19/03/2000)</div>
 
           <div className="fs-4">Ciudad: {info.city}</div>
         </div>

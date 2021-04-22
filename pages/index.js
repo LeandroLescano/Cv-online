@@ -9,6 +9,13 @@ import Skills from "../components/skills.js";
 import StartPage from "../components/start-page.js";
 import styles from "../styles/Home.module.css";
 import AOS from "aos";
+import Darkmode from 'darkmode-js';
+
+const options = {
+  label: '🌓'
+}
+
+new Darkmode(options).showWidget();
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
