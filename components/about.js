@@ -29,25 +29,22 @@ function About() {
           <div className="card mb-2">
             <div className="fs-4">Edad: {age} años (19/03/2000)</div>
           </div>
-          <div className="card">
+          <div className="card mb-2">
             <div className="fs-4">Ciudad: {info.city}</div>
           </div>
         </div>
         <div className="col" data-aos="fade-left">
-          <div className="row mb-2">
-          {/* <div className="fs-4">Email: {info.email}</div> */}
-          <div className="col">
-              <a href={`mailto:${info.email}`}>
-            <div className="card d-flex flex-row justify-content-center">   
-                  <FontAwesomeIcon size="xs" className="icon-email" icon={faEnvelope} /> 
-                  <span className="fs-4 ms-2">
-                    Contactame via mail
-                  </span>
-            </div>
-              </a>
-            </div>
+          <div className="row mb-2 ms-0">
+            <a href={`mailto:${info.email}`} className="px-0">
+              <div className="card d-flex flex-row justify-content-center">   
+                    <FontAwesomeIcon size="xs" className="icon-email" icon={faEnvelope} /> 
+                    <span className="fs-4 ms-2">
+                      Contactame via mail
+                    </span>
+              </div>
+            </a>
           </div>
-          <div className="row">
+          <div className="row m-0">
             <div className="col text-center">
               <a href={info.linkedin} target="_blank" rel="noopener noreferrer">
                 <button className="btn btn-light border">
