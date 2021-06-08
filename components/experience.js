@@ -14,7 +14,7 @@ function Experience() {
     },
     {
       place: "Municipalidad de Tigre",
-      area: "Recursos Humanos",
+      area: "",
       position: "Administrativo",
       since: "22/10/2018",
       until: "08/03/2021",
@@ -33,7 +33,7 @@ function Experience() {
   ]);
 
   const [isMobile, setIsMobile] = useState(false);
-  
+
   useEffect(() => {
     window.addEventListener("resize", () => {
       if (window.innerWidth > 768) {
@@ -42,7 +42,7 @@ function Experience() {
         setIsMobile(true);
       }
     });
-  
+
     if (window.innerWidth > 768) {
       setIsMobile(false);
     } else {
@@ -104,7 +104,9 @@ function Experience() {
 
   return (
     <div className="content-box">
-      <h2 data-aos="fade-right" data-aos-offset="10">Experiencia</h2>
+      <h2 data-aos="fade-right" data-aos-offset="10">
+        Experiencia
+      </h2>
       <div className="row m-0">
         <div className="col">
           {exp.map((item, i) => {
@@ -143,7 +145,11 @@ function Experience() {
                       {`${item.since} - ${item.until}`}
                     </div>
                     <div className="card-body">
-                      <h5 className="card-title"><b>{item.position} - {item.area}</b></h5>
+                      <h5 className="card-title">
+                        <b>
+                          {item.position} {item.area != "" && ` - ` + item.area}
+                        </b>
+                      </h5>
                       <p className="card-text">
                         {item.place}
                         <br />
