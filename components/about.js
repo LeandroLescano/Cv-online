@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function About() {
   const [age, setAge] = useState(20);
@@ -24,30 +26,46 @@ function About() {
       <h2 data-aos="fade-right">Datos personales</h2>
       <div className="row m-0">
         <div className="col" data-aos="fade-right">
-          <div className="fs-4">Edad: {age} años (19/03/2000)</div>
-
-          <div className="fs-4">Ciudad: {info.city}</div>
+          <div className="card mb-2">
+            <div className="fs-4">Edad: {age} años (19/03/2000)</div>
+          </div>
+          <div className="card mb-2">
+            <div className="fs-4">Ciudad: {info.city}</div>
+          </div>
         </div>
         <div className="col" data-aos="fade-left">
-          <div className="fs-4">Email: {info.email}</div>
-          <a href={info.linkedin} target="_blank" rel="noopener noreferrer">
-            <button className="btn btn-light border">
-              <img
-                src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg"
-                alt="LinkedInLogo"
-                height="25"
-              />
-            </button>
-          </a>
-          <a href={info.github} target="_blank" rel="noopener noreferrer">
-            <button className="btn btn-light border ms-2">
-              <img
-                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
-                alt="GitHubLogo"
-                height="25"
-              />
-            </button>
-          </a>
+          <div className="row mb-2 ms-0">
+            <a href={`mailto:${info.email}`} className="px-0">
+              <div className="card d-flex flex-row justify-content-center">   
+                    <FontAwesomeIcon size="xs" className="icon-email" icon={faEnvelope} /> 
+                    <span className="fs-4 ms-2">
+                      Contactame via mail
+                    </span>
+              </div>
+            </a>
+          </div>
+          <div className="row m-0">
+            <div className="col text-center">
+              <a href={info.linkedin} target="_blank" rel="noopener noreferrer">
+                <button className="btn btn-light border">
+                  <img
+                    src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg"
+                    alt="LinkedInLogo"
+                    height="25"
+                  />
+                </button>
+              </a>
+              <a href={info.github} target="_blank" rel="noopener noreferrer">
+                <button className="btn btn-light border ms-2">
+                  <img
+                    src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
+                    alt="GitHubLogo"
+                    height="25"
+                    />
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
