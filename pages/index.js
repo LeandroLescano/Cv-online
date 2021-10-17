@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 import Link from "next/Link";
 import Rain from "../components/atom/rain";
-import Darkmode from "darkmode-js";
 
 function index() {
   return (
