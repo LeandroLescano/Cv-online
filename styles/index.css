@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.index-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.bored {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #202020, #111119);
+}
+
+.web {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.button {
+  padding: 0.5em;
+  margin: 0 0.8em;
+  border: 2px solid white;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+/* ==== BACKGROUND ==== */

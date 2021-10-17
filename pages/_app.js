@@ -1,12 +1,13 @@
+import "../styles/curriculum/about.css";
+import "../styles/curriculum/header.css";
+import "../styles/curriculum/animations.css";
+import "../styles/curriculum/experience.css";
+import "../styles/curriculum/portfolio.scss";
+import "../styles/experimental/skills.css";
 import "../styles/globals.css";
-import "../styles/header.css";
-import "../styles/animations.css";
-import "../styles/skills.css";
-import "../styles/education.css";
-import "../styles/experience.css";
+import "../styles/index.css";
+import "../styles/rain.css";
 import "../styles/404.scss";
-import "../styles/portfolio.scss";
-import "../styles/about.css";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
