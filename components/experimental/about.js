@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import CountUp from "react-countup";
 function About() {
   const [age, setAge] = useState(0);
 
