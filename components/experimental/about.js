@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 function About() {
-  const [age, setAge] = useState(0);
+  const [age, setAge] = useState(20);
 
   const info = {
     email: "leandrolescano11@gmail.com",

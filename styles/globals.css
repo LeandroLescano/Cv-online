@@ -45,6 +45,21 @@ html::-webkit-scrollbar-track {
   background: transparent;
 }
 
+.test-scroll::-webkit-scrollbar {
+  width: 0.7em;
+  position: absolute;
+  background: transparent;
+  overflow: overlay;
+}
+
+.test-scroll::-webkit-scrollbar-thumb {
+  background: #609c87;
+}
+
+.test-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 /* DARK MODE OVERRIDE */
 .darkmode-toggle {
   z-index: 3;

@@ -1,0 +1,30 @@
+html,
+body {
+  overflow: hidden;
+}
+.test-scroll {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.content-box {
+  padding: 2em;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.content-box:nth-child(even) {
+  background-color: #6bfbce;
+}
+
+.content-box:nth-child(odd) {
+  background-color: #e6fff5;
+}
+
+/*
+#6BFBCE
+#609C87
+#E6FFF5
+#D9EDDF 
+*/
