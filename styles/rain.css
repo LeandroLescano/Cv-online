@@ -3,9 +3,10 @@
 .rain {
   position: absolute;
   left: 0;
-  width: 48%;
+  width: 95%;
   height: 100%;
   z-index: 2;
+  /* top: 48%; */
 }
 
 .rain.back-row {
@@ -29,10 +30,10 @@
     transform: translateY(0vh);
   }
   75% {
-    transform: translateY(90vh);
+    transform: translateY(55vh);
   }
   100% {
-    transform: translateY(90vh);
+    transform: translateY(55vh);
   }
 }
 
@@ -98,3 +99,21 @@
 }
 
 /* ======= ↑ RAIN ↑ ========== */
+
+@media (min-width: 480px) {
+  .rain {
+    top: 8%;
+  }
+
+  @keyframes drop {
+    0% {
+      transform: translateY(0vh);
+    }
+    75% {
+      transform: translateY(100vh);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+}

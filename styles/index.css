@@ -4,21 +4,25 @@ html {
 
 body {
   margin: 0;
-  overflow-x: hidden;
 }
 
 .index-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
   height: 100%;
+  overflow: hidden;
 }
 
 .bored {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(to bottom, #202020, #111119);
+  height: 100%;
+  width: 100%;
 }
 
 .web {
@@ -28,8 +32,9 @@ body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
-  height: 100vh;
+  height: 100%;
 }
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -51,4 +56,8 @@ body {
   color: white;
 }
 
-/* ==== BACKGROUND ==== */
+@media (min-width: 480px) {
+  .index-container {
+    flex-direction: row;
+  }
+}

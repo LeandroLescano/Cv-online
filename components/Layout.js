@@ -44,7 +44,6 @@ function Layout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
           rel="stylesheet"
         />
-        <script src="granim.min.js"></script>
       </Head>
       {children}
     </>
