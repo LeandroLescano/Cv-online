@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import Image from "next/image";
 
 function Experience() {
@@ -6,16 +7,25 @@ function Experience() {
     {
       place: "Trenes Argentinos Infraestructura",
       area: "Tecnología e Innovación",
+      position: "Programador Fullstack",
+      since: "01/02/2022",
+      until: "Actualidad",
+      duration: "",
+      img: "/logoTrenes.png",
+    },
+    {
+      place: "Trenes Argentinos Infraestructura",
+      area: "Tecnología e Innovación",
       position: "Administrativo",
       since: "08/06/2021",
-      until: "Actualidad",
+      until: "31/01/2022",
       duration: "",
       img: "/logoTrenes.png",
     },
     {
       place: "Municipalidad de Tigre",
       area: "Innovación",
-      position: "Programador",
+      position: "Programador Fullstack",
       since: "08/03/2021",
       until: "07/06/2021",
       duration: "",
