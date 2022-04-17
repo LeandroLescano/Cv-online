@@ -1,5 +1,7 @@
 .img-experience {
   max-height: 153px !important;
+  margin: 0 auto;
+  max-width: 100% !important;
 }
 
 .text-white {

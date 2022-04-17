@@ -143,14 +143,10 @@ function Experience() {
                     data-aos="fade-right"
                   >
                     {item.img != null ? (
-                      <Image
+                      <img
                         src={item.img}
-                        height={50}
-                        width={50}
-                        layout="responsive"
-                        loading="lazy"
                         alt="LogoCompany"
-                        className="p-4"
+                        className="p-2 img-experience"
                       />
                     ) : (
                       <p className="text-white fw-bold m-auto">{item.place}</p>
