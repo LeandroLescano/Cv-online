@@ -18,7 +18,7 @@ function Portfolio() {
       name: "Click battle",
       desc: "Mini-juego competencia de clicks online. Realizado con ReactJS y Firebase",
       img: "https://i.gyazo.com/a88f6deb1c1f82cc23da4d62ee03aef7.png",
-      link: "https://click-battle-mp.web.app/",
+      link: "https://click-battle.vercel.app/",
     },
     {
       name: "Curriculum online",
