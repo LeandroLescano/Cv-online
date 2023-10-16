@@ -45,7 +45,7 @@ function Portfolio() {
       <h2 data-aos="fade-right" data-aos-offset="10">
         Portfolio
       </h2>
-      <div className="row g-2 wrapper">
+      <div className="px-2 row g-2 wrapper">
         {port.map((item, i) => {
           return (
             <div

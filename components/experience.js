@@ -1,15 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 
 import Image from "next/image";
 
 function Experience() {
   const [exp, setExp] = useState([
     {
+      place: "Zentricx",
+      area: "Desarrollo e Innovación",
+      position: "Team Leader",
+      since: "01/03/2023",
+      until: "Actualidad",
+      duration: "",
+      img: "/zcx-white.svg",
+    },
+    {
+      place: "Zentricx",
+      area: "Desarrollo e Innovación",
+      position: "Programador Fullstack",
+      since: "30/05/2022",
+      until: "28/02/2023",
+      duration: "",
+      img: "/zcx-white.svg",
+    },
+    {
       place: "Trenes Argentinos Infraestructura",
       area: "Tecnología e Innovación",
       position: "Programador Fullstack",
       since: "01/02/2022",
-      until: "Actualidad",
+      until: "29/05/2022",
       duration: "",
       img: "/logoTrenes.png",
     },
@@ -116,7 +134,7 @@ function Experience() {
       } else {
         item.duration += ")";
       }
-      return { ...item };
+      return {...item};
     });
     setExp([...temp]);
   }, []);

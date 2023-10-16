@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 
 function Header() {
   useEffect(() => {
@@ -16,7 +16,7 @@ function Header() {
         >
           <img
             className="img-profile rounded-circle"
-            src="https://i.ibb.co/RpmfcZd/CvFoto.jpg"
+            src="./img-profile.jpg"
             alt="profileImg"
           />
         </div>

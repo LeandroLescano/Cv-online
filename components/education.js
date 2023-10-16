@@ -21,10 +21,10 @@ function Education() {
       until: "2020",
     },
     {
-      title: "Licenciatura en Tecnología Educativa",
+      title: "Licenciatura en Tecnología Educativa (Incompleto)",
       institute: "Universidad Tecnológica Nacional",
       since: "2021",
-      until: "Actualidad",
+      until: "2022",
     },
   ];
 
@@ -47,7 +47,9 @@ function Education() {
                   {item.since + " - " + item.until}
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title"><b>{item.title}</b></h5>
+                  <h5 className="card-title">
+                    <b>{item.title}</b>
+                  </h5>
                   <p className="card-text">{item.institute}</p>
                 </div>
               </div>

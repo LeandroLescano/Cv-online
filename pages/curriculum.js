@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 import About from "../components/about.js";
 import Education from "../components/education.js";
 import Experience from "../components/experience.js";
@@ -32,8 +32,8 @@ export default function Home() {
           <div>
             <About />
             <Skills />
-            <Education />
             <Experience />
+            <Education />
             <Portfolio />
           </div>
         </Layout>

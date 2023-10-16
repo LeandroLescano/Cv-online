@@ -1,16 +1,11 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 
 function Skills() {
-  const [skills, setSkills] = useState([
+  const [skills] = useState([
     {
-      name: "C#",
-      logo: "/logo-csharp.svg",
-      backColor: "#7b1fa2",
-    },
-    {
-      name: "Java",
-      logo: "/logo-java.png",
-      backColor: "#c62828",
+      name: "Typescript",
+      logo: "/logo-typescript.png",
+      backColor: "#0277bd",
     },
     {
       name: "SQL",
@@ -38,13 +33,18 @@ function Skills() {
       backColor: "#03a9f4",
     },
     {
+      name: "React Native",
+      logo: "logo-react.png",
+      backColor: "#03a9f4",
+    },
+    {
       name: "Firebase",
       logo: "/logo-firebase.png",
       backColor: "#fb8c00",
     },
     {
-      name: "Android",
-      logo: "logo-android.png",
+      name: "NextJS",
+      logo: "logo-nextjs.png",
       backColor: "#7cb342",
     },
   ]);
@@ -63,7 +63,7 @@ function Skills() {
       <h2 data-aos="fade-right" data-aos-offset="10" className="mb-2">
         Tecnologías
       </h2>
-      <div className="skills-section">
+      <div>
         <div className="row m-0">
           {skills.map((tec, i) => {
             return (
