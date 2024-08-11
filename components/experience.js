@@ -5,11 +5,20 @@ import Image from "next/image";
 function Experience() {
   const [exp, setExp] = useState([
     {
+      place: "Mercado Libre",
+      area: "Mercado Envíos",
+      position: "Software Engineer",
+      since: "20/12/2023",
+      until: "Actualidad",
+      duration: "",
+      img: "/meli.svg",
+    },
+    {
       place: "Zentricx",
       area: "Desarrollo e Innovación",
       position: "Team Leader",
       since: "01/03/2023",
-      until: "Actualidad",
+      until: "19/12/2023",
       duration: "",
       img: "/zcx-white.svg",
     },
